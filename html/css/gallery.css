@@ -20,7 +20,7 @@ body {
     position: relative;
     width: 100%;
     height: 350px;
-    background-image: url("/student-bg.jpeg");
+    background-image: URL("../image/student-bg.jpeg");
     background-size: cover;
     background-position: center;
     display: flex;
