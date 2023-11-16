@@ -23,17 +23,22 @@ html {
     background-image: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0, 0, 0, 0.25)), url("/back-template.avif");
 }
 
+.left-area {
+    width: 50%;
+}
+
 .text-box {
     position: relative;
-    width: 30%;
+    width: 65%;
     height: 45vh;
     /* background-color: antiquewhite; */
-    left: -20%;
+    left: 20%;
+    /* top: -100%; */
     
 }
 
 .text-box h1 {
-    font-size: 4.5rem;
+    font-size: 5rem;
     font-weight: 400;
     margin-bottom: 2rem;
 }
@@ -41,7 +46,7 @@ html {
 .text-box p {
     margin-bottom: 3.5rem;
     line-height: 2;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 300;
 }
 
@@ -51,9 +56,10 @@ html {
     border-radius: 2rem;
     background-color: tomato;
     font-weight: 300;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: white;
     text-decoration: none;
+    font-weight: 400;
 }
 
 .main-btn:active {

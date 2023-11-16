@@ -1,0 +1,439 @@
+/*Import Google Fonts*/ 
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;500;700;800&family=Poppins:wght@300;400;500;600;800;900&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;500;700;800&family=Poppins:wght@300;400;500;600;800;900&family=Roboto&display=swap');
+/*Body*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    background: white;
+    width: 100%;
+    font: #2d2d2d;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/*Header*/
+.header { /*Header Background*/
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 40px;
+    background-image: linear-gradient(rgba(0,0,0, 0.4), rgba(0,0,0, 0.4)), url("image/about-us.jpeg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #f2f2f2;
+    text-align: center;
+}
+.navbar { /*Navbar*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: E4E4CC;
+    color: black;
+    width: 90%;
+    padding: 12px 0;
+    background: #f2f2f2;
+    border-radius: 50px;
+}
+.navbar img { /*Navbar Image*/
+    width: 10%;
+    margin-left: 40px;
+}
+.navbar a { /*Navbar Text*/
+    font-family: 'Lato', sans-serif;
+    color: black;
+    margin-right: 90px;
+    margin-left: 90px;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+.navbar a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.navbar a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left; 
+}
+.navbar a:active {
+    font-weight: bold;
+    font-size: 20px;
+}
+.header #header-title { /*Header Text*/
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 6rem;
+    font-weight: 400;
+}
+.header #header-description { /*Header Description*/
+    line-height: 1.5;
+    color: #f2f2f2;
+    padding: 0 450px;
+    font-weight: 300;
+    margin-bottom: 4rem;
+}
+
+/*Header Button*/
+button {
+    padding: 10px 40px;
+    font-size: 16px;
+    border: none;
+    font-family: 'Lato', sans-serif;
+    border-radius:6px;
+    background-color: #d5dbdb;
+    color: #2D2D2D;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #333;
+    color: #f2f2f2;
+}
+
+/*Main Section - Teaching Program*/
+.teaching-programs {
+    width: 100%; 
+    height: 25vh; 
+    text-align: center;
+}
+
+
+/*Footer*/
+/* footer {
+    background-color: #c5c6c7;
+    width: 100%;
+    height: 18vh;
+}
+footer .container {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.logo-col {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    padding-top: 15px;
+    padding-right: 40px;
+    border-right: 1px solid grey;
+}
+.contactus-col {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-top: 5px;
+    width: 85%;
+}
+.contactus-col h3 {
+    margin: 0;
+}
+.instagram {
+    display: flex;
+    flex-direction: row;
+}
+.fa-instagram {
+    border-radius: 50%;
+    background: #125688;
+    color: white;
+    padding: 5px;
+    margin-top: 15px;
+    margin-right: 5px;
+    font-size: 20px;
+    width: 20px;
+    height:20px;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+#instagram-text {
+    font-size: 16px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #2d2d2d;
+}
+
+#instagram-text:hover {
+    font: bold;
+    text-decoration: underline;
+} */
+
+/* SEE MORE HEADER BUTTON */
+.seemore {
+    border-radius: 25px;
+    border: 1px solid tomato;
+    background: none;
+    color: white;
+}
+
+/* ADDED SECTION 1 */
+.section1 {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section1-title, .section1-subtext {
+    width: 45%;
+    text-align: center;
+
+}
+.section1-title {
+    font-size: 3.5rem;
+    font-weight: 500;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+.section1-subtext {
+    font-size: 1.5rem;
+    line-height: 2;
+    margin-bottom: 6rem;
+}
+
+.section1-info-container {
+    display: flex;
+    gap: 4rem;
+    /* justify-content: space-between; */
+    
+}
+
+.section1-info {
+    /* background-color: aqua; */
+    width: 35rem;
+}
+
+.section1-info-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 0rem; */
+    text-align: center;
+}
+
+.section1-numbers {
+    position: absolute;
+    font-size: 2.5rem;
+    width: 5rem;
+    height: 5rem;
+    /* background-color: aqua; */
+    border: 2px solid tomato;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(0,-75%);
+}
+
+.section1-logo, .section1-title2, .section1-text {
+    padding-left: 2rem;
+    /* transform: translate(0,50%); */
+}
+
+.section1-logo {
+    font-size: 8rem;
+}
+
+.section1-title2 {
+    font-size: 2.75rem;
+    font-weight: 400;
+}
+
+.section1-text {
+    line-height: 2;
+    font-size: 1.4rem;
+}
+
+/* ****************** */
+/* HISTORY SECTION */
+/* ****************** */
+.section-history {
+    background-color: rgb(253, 253, 253);
+}
+
+.history-numbers {
+    font-size: 6rem;
+    font-weight: 800;
+    /* margin-bottom: 0 !important; */
+}
+
+.history-title {
+    font-weight: 400;
+    font-size: 4rem;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.zig-zag-template {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    width: 55%;
+    margin: auto;
+    /* replace this with the history */
+    margin-top: 10vh;
+    margin-bottom: 5rem;
+}
+
+/* style individual card */
+.content-area {
+    /* delete this */
+    /* background-color: beige; */
+    display: flex;
+    height: 30rem;
+    /* width: 100%; */
+}
+
+.content-img {
+    height: 100%;
+    width: 50%;
+    background-color: blue;
+}
+
+.content-txt-area {
+    width: 50%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.content-txt-area h2 {
+    font-size: 4rem;
+    font-weight: 300;
+    /* margin: 0; */
+    margin-bottom: 2rem;
+}
+
+.content-txt-area p {
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
+
+.content-area h2, .content-area p {
+    transform: translate(0, -90%);
+}
+
+/* NEW FOOTER */
+.footer {
+    padding: 9.6rem 0;
+    border-top: 1px solid #eee;
+}
+
+.grid--footer {
+    grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.footer-logo {
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+.footer-heading {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 3.2rem;
+}
+
+.contacts {
+    font-style: normal;
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+.address {
+    margin-bottom: 2.4rem;
+}
+
+.logo-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo {
+    /* recall: a link is a inline and to apply margin need to be block */
+    display: block;
+    margin-bottom: 3.2rem;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    gap: 2.4rem;
+}
+
+.social-icon {
+    height: 2.4rem;
+    width: 2.4rem;
+}
+
+.copyright {
+    font-size: 1.4rem;
+    color: #767676;
+    line-height: 1.6;
+    margin-top: auto;
+}
+
+.footer-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.footer-link:link, .footer-link:visited {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #767676;
+}
+
+.footer-link:hover, .footer-link:active {
+    color: #555;
+}
+
+/* additionals */
+.container {
+    max-width: 120rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    row-gap: 9.6rem;
+    column-gap: 6.4rem;
+
+    /* margin-bottom: 9.6rem; */
+}
+
+.grid--5--cols {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+/* temporary fix */
+.social-links, .footer-nav {
+    transform: translate(-22%, 0);
+}

@@ -19,19 +19,19 @@ body {
 .header { /*Header Background*/
     position: relative;
     width: 100%;
-    height: 500px;
-    margin-bottom: 40px;
-    background-image: url("about-us.jpeg");
+    height: 350px;
+    background-image: url("/student-bg.jpeg");
     background-size: cover;
     background-position: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+
     align-items: center;
     color: #f2f2f2;
     text-align: center;
 }
 .navbar { /*Navbar*/
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -77,109 +77,138 @@ body {
     font-size: 20px;
 }
 .header #header-title { /*Header Text*/
-    margin-top: 50px;
+    margin-top: 100px;
     margin-bottom: 20px;
     font-size: 60px;
-}
-.header #header-description { /*Header Description*/
-    line-height: 25px;
-    color: #f2f2f2;
-    padding: 0 450px;
-    font-weight: normal;
-    margin-bottom: 40px;
-}
-
-/*Header Button*/
-button {
-    padding: 10px 40px;
-    font-size: 16px;
-    border: none;
-    font-family: 'Lato', sans-serif;
-    border-radius:6px;
-    background-color: #d5dbdb;
-    color: #2D2D2D;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-button:hover {
-    background-color: #333;
-    color: #f2f2f2;
 }
 
 /*Main Section*/
 .main-section {
     width: 100%;
-    height: 115vh;
+    height: auto; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-/*Main Section - Top Content*/
-.top-content { /*Top Content*/
-    width: 100%;
-    height: 55vh;
-}
-.main-sentence { /*Main Sentence*/
+.col {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 40px;
-}
-.main-sentence h2 { /*The Sentence*/
-    border: none;
-    font-family: 'Lato', sans-serif;
-    color: #2d2d2d;
-    margin-bottom: 40px;
-    text-align: center;
-}
-.who-are-we { /*Who Are We Section*/
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-bottom: 20px;
-}
-.who-are-we p {
-    padding: 0 350px;
-    line-height: 30px;
-    font-family: 'Lato', sans-serif;
-    font-weight: normal;
-    margin-top: 0;
-    margin-bottom: 30px;
+    width: 22.5%;
+    padding: 15px;
 }
 
-/*Main Section - Bottom Content*/
-.bottom-content { 
-    display: flex;
-    height: 30vh;
-    
+.main-section #image1 {
+    padding-bottom: 15px;
 }
-.vision {
-    width: 50%;
-    height: auto;
-    text-align: center;
-    padding-left: 50px;
-    padding-right: 25px;
-    line-height: 25px;
-}
-.mission {
-    width: 50%;
-    height: auto;
-    padding-right: 50px;
-    padding-left: 25px;
-    line-height: 25px;
-    text-align: center;
-}
-
-/*Main Section - Teaching Program*/
-.teaching-programs {
-    width: 100%; 
-    height: 25vh; 
-    text-align: center;
+.main-section #image2 {
+    padding-top: 15px; 
 }
 
 /*Footer*/
-footer {
+/* NEW FOOTER */
+.footer {
+    padding: 9.6rem 0;
+    border-top: 1px solid #eee;
+}
+
+.grid--footer {
+    grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.footer-logo {
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+.footer-heading {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 3.2rem;
+}
+
+.contacts {
+    font-style: normal;
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+.address {
+    margin-bottom: 2.4rem;
+}
+
+.logo-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo {
+    /* recall: a link is a inline and to apply margin need to be block */
+    display: block;
+    margin-bottom: 3.2rem;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    gap: 2.4rem;
+}
+
+.social-icon {
+    height: 2.4rem;
+    width: 2.4rem;
+}
+
+.copyright {
+    font-size: 1.4rem;
+    color: #767676;
+    line-height: 1.6;
+    margin-top: auto;
+}
+
+.footer-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.footer-link:link, .footer-link:visited {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #767676;
+}
+
+.footer-link:hover, .footer-link:active {
+    color: #555;
+}
+
+/* additionals */
+.container {
+    max-width: 120rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    row-gap: 9.6rem;
+    column-gap: 6.4rem;
+
+    /* margin-bottom: 9.6rem; */
+}
+
+.grid--5--cols {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+/* temporary fix */
+.social-links, .footer-nav {
+    transform: translate(-22%, 0);
+}
+
+
+/*footer {
     background-color: #c5c6c7;
     width: 100%;
     height: 18vh;
@@ -236,4 +265,4 @@ footer .container {
 #instagram-text:hover {
     font: bold;
     text-decoration: underline;
-}
+}*/
